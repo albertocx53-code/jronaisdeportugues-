@@ -233,7 +233,6 @@ footer{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
 </style></head><body>
 <div class="bar" aria-label="Oferta"><div class="tq" id="tq"></div></div>
 <header class="mast p1">
-<div class="dl"><span>Ano I · Edição especial</span><span id="dt">Edição de hoje</span><span>+200 edições</span></div>
 <span class="ex">EXTRA! EXTRA!</span>
 <div class="mn">Jornais <span>de Português</span></div>
 <div class="ms">+200 Jornais de Português para Trabalhar Gramática, Interpretação e Produção de Texto em Sala</div></header>
@@ -375,8 +374,6 @@ var BB=B.filter(Boolean),nb=BB.length;
 /* ticker */
 var it=['🗞️ <b>EXTRA!</b> +200 Jornais de Português','✦ <b>'+nb+' bônus</b> grátis','✦ De R$ 67,90 por <b>R$ 19,90</b>','✦ Acesso imediato no e-mail','✦ Garantia de <b>7 dias</b>','✦ Pagamento único'];
 var h=it.map(function(t){return '<span>'+t+'</span>'}).join('');$('tq').innerHTML=h+h+h+h;
-/* data do "jornal" */
-try{var d=new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});$('dt').textContent=d.charAt(0).toUpperCase()+d.slice(1)}catch(e){}
 /* selos nos bônus */
 [].forEach.call(document.querySelectorAll('#bg .bc'),function(c,i){c.insertAdjacentHTML('afterbegin','<span class="bn">BÔNUS #'+(i+1)+'</span><span class="gr">GRÁTIS</span>')});
 /* valor total */
